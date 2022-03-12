@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DBController;
 use App\Http\Controllers\ORMController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [ORMController::class, 'apiIndex']);
+
+Route::get('/db', [DBController::class, 'apiindex']);
